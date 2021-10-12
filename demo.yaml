@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nacos-demo
+  namespace: default
+  labels:
+    app: nacos-demo
+spec:
+  selector:
+    matchLabels:
+      app: nacos-demo
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nacos-demo
+      annotations:
+        enable.version-checker.io/busybox: "true"
+    spec:
+      containers:
+      - name: nacos-demo
+        image: harbor.brightcns.cn/devops/nacos-examples:13
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
