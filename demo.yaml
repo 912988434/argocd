@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: nacos-demo
-        image: harbor.brightcns.cn/devops/nacos-examples:13
+        image: ghcr.io/912988434/java-demo:master-33
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
