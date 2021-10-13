@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: nacos-demo
-        image: ghcr.io/912988434/java-demo:master-33
+        image: ghcr.io/912988434/java-demo:ghcr.io/912988434/java-demo:master-38
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
