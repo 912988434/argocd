@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: nacos-demo
-        image: harbor.harmay.com/912988434/java-demo:master-42
+        image: harbor.harmay.com/912988434/java-demo:harbor.harmay.com/912988434/java-demo:master-43
         imagePullSecrets: harbor
         imagePullPolicy: IfNotPresent
         ports:
